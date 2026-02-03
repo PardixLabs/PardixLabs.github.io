@@ -9,16 +9,41 @@
 </head>
 <body>
 
-<header>
-  <h1>Pardix Labs</h1>
-  <p>
-    Pardix Labs builds <span class="accent">local-first developer tools</span> focused on understanding dependency risk,
-    software supply chains, and long-term maintainability — without forcing code into the cloud.
-  </p>
+<header class="site-header">
+  <nav class="nav">
+    <div class="logo">Pardix Labs</div>
+    <div class="nav-links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="feraldeps.html">FeralDeps</a>
+    </div>
+  </nav>
+  <div class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Local‑first developer tooling</p>
+      <h1>Pardix Labs</h1>
+      <p class="lead">
+        Pardix Labs builds <span class="accent">local-first developer tools</span> focused on understanding dependency risk,
+        software supply chains, and long-term maintainability — without forcing code into the cloud.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="feraldeps.html">Explore FeralDeps</a>
+        <a class="button ghost" href="#who">Who it’s for</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Built for clarity</h3>
+      <p>See risk hotspots, version drift, and dependency health at a glance — entirely offline.</p>
+      <ul class="checklist">
+        <li>Local scanning</li>
+        <li>Human‑readable explanations</li>
+        <li>No accounts, no uploads</li>
+      </ul>
+    </div>
+  </div>
 </header>
 
 <main>
-  <section>
+  <section class="card">
     <h2>What We Do</h2>
     <p>
       Modern software relies heavily on third-party dependencies, many of which are outdated, poorly maintained,
@@ -30,7 +55,7 @@
     </p>
   </section>
 
-  <section>
+  <section class="card">
     <h2>Products</h2>
     <p>
       Pardix Labs is a general software company focused on building practical, developer‑first tools.
@@ -43,16 +68,16 @@
     <p>
       Learn more on the <a href="feraldeps.html">FeralDeps product page</a>.
     </p>
-    <ul>
-      <li>• Scans project folders directly on the developer’s machine</li>
-      <li>• Detects outdated dependencies and version drift</li>
-      <li>• Analyzes both direct and transitive dependencies</li>
-      <li>• Highlights potential security and stability risks</li>
-      <li>• Provides clear, human-readable explanations</li>
+    <ul class="checklist">
+      <li>Scans project folders directly on the developer’s machine</li>
+      <li>Detects outdated dependencies and version drift</li>
+      <li>Analyzes both direct and transitive dependencies</li>
+      <li>Highlights potential security and stability risks</li>
+      <li>Provides clear, human-readable explanations</li>
     </ul>
   </section>
 
-  <section>
+  <section class="card">
     <h2>Why Local‑First</h2>
     <p>
       Many existing tools require uploading source code or dependency manifests to third-party services.
@@ -65,17 +90,17 @@
     </p>
   </section>
 
-  <section>
+  <section class="card" id="who">
     <h2>Who It’s For</h2>
-    <ul>
-      <li>• Student developers learning dependency management</li>
-      <li>• Open-source maintainers auditing project health</li>
-      <li>• Indie developers and small teams</li>
-      <li>• Anyone who wants clarity without enterprise overhead</li>
+    <ul class="checklist">
+      <li>Student developers learning dependency management</li>
+      <li>Open-source maintainers auditing project health</li>
+      <li>Indie developers and small teams</li>
+      <li>Anyone who wants clarity without enterprise overhead</li>
     </ul>
   </section>
 
-  <section>
+  <section class="card">
     <h2>Status</h2>
     <p>
       Pardix Labs is an early-stage software company currently being developed as part of an academic
@@ -90,6 +115,11 @@
 
 <footer>
   <p>© Pardix Labs — Local‑first developer tooling.</p>
+  <div class="footer-links">
+    <a href="feraldeps.html">FeralDeps</a>
+    <span class="dot">•</span>
+    <a href="index.html">Home</a>
+  </div>
 </footer>
 
 </body>
