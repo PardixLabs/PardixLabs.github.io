@@ -11,110 +11,107 @@
 
 <header class="site-header">
   <nav class="nav">
-    <div class="logo">Pardix Labs</div>
+    <a href="index.html" class="logo">
+      <img src="https://avatars.githubusercontent.com/u/258657403?s=200&v=4" alt="Pardix Labs" />
+      <span>Pardix Labs</span>
+    </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="feraldeps.html" aria-current="page">FeralDeps</a>
-      <a href="https://github.com/PardixLabs">Github</a>
-      <a href="mailto:pardixlabs@gmail.com">Contact Us</a>
+      <a href="feraldeps.html" class="active">FeralDeps</a>
+      <a href="https://github.com/PardixLabs" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:pardixlabs@gmail.com">Contact</a>
     </div>
   </nav>
   <div class="hero">
     <div class="hero-content">
-      <p class="eyebrow">Product</p>
+      <span class="eyebrow">Product</span>
       <h1>FeralDeps</h1>
       <p class="lead">
-        FeralDeps maps your project’s dependencies, flags vulnerabilities, and shows
-         you the safest upgrade path — all locally and in a simple, easy-to-read report.
+        A standalone Java application that scans your project locally to map dependencies, 
+        flag vulnerabilities, and show you the safest upgrade path — all offline.
       </p>
       <div class="hero-actions">
-        <a class="button primary" href="#overview">Overview</a>
-        <a class="button primary" href="https://github.com/PardixLabs/feraldeps-core" target="_blank" rel="noopener">GitHub Repo</a>
-        <a class="button primary" href="https://github.com/PardixLabs/feraldeps-core/releases/download/v0.1.2/feraldeps-0.1.2.jar" target="_blank" rel="noopener">Download JAR</a>
-        <a class="button ghost" href="index.html">Back to Pardix Labs</a>
+        <a class="btn btn-primary" href="https://github.com/PardixLabs/feraldeps-core/releases/latest">Download</a>
+        <a class="btn btn-secondary" href="https://github.com/PardixLabs/feraldeps-core" target="_blank" rel="noopener">View on GitHub</a>
       </div>
-    </div>
-    <div class="hero-card">
-      <h3>Built for real workflows</h3>
-      <p>Scan projects locally, understand dependency health, and act early with confidence.</p>
-      <ul class="checklist">
-        <li>Local scanning</li>
-        <li>Risk signals</li>
-        <li>Actionable summaries</li>
-      </ul>
     </div>
   </div>
 </header>
 
 <main>
-  <section class="card" id="overview">
+  <section class="intro">
     <h2>Overview</h2>
     <p>
-      FeralDeps scans projects directly on your machine to map dependency graphs, identify risk hotspots,
-      and explain why a dependency matters. It is designed for clarity, not noise.
+      FeralDeps scans projects directly on your machine to map dependency graphs, 
+      identify risk hotspots, and explain why a dependency matters. It's designed for 
+      clarity, not noise.
     </p>
   </section>
 
-  <section class="card">
-    <h2>Key Capabilities</h2>
-    <ul class="checklist">
-      <li>Local project scanning (no uploads, no accounts)</li>
-      <li>Detection of outdated packages and version drift</li>
-      <li>Direct and transitive dependency analysis</li>
-      <li>Risk signals for security, stability, and maintenance</li>
-      <li>Human-readable explanations and summaries</li>
-    </ul>
+  <section class="features">
+    <div class="feature-card">
+      <h3>Key Capabilities</h3>
+      <ul>
+        <li>Local project scanning — no uploads, no accounts</li>
+        <li>Detection of outdated packages and version drift</li>
+        <li>Direct and transitive dependency analysis</li>
+        <li>Risk signals for security, stability, and maintenance</li>
+        <li>Human-readable explanations and summaries</li>
+      </ul>
+    </div>
   </section>
 
-  <section class="card">
+  <section class="values">
     <h2>Why It Matters</h2>
-    <p>
-      Modern software is built on a deep dependency stack. FeralDeps gives developers a clear view of
-      what they rely on and where hidden risk accumulates — before it becomes a problem.
-    </p>
+    <div class="value-grid">
+      <div class="value-item">
+        <h3>Supply Chain Risk</h3>
+        <p>Modern software relies on deep dependency stacks. FeralDeps shows you where hidden risk accumulates before it becomes a problem.</p>
+      </div>
+      <div class="value-item">
+        <h3>Local Privacy</h3>
+        <p>Your code never leaves your machine. Scan offline, get results instantly, maintain full control over your data.</p>
+      </div>
+      <div class="value-item">
+        <h3>Developer Clarity</h3>
+        <p>Understand what you're depending on with clear, actionable summaries — no complex dashboards or enterprise subscriptions required.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>Status</h2>
-    <p>
-      FeralDeps is currently in active development as part of Pardix Labs' early product roadmap.
-      The focus right now is on validating workflows and building a reliable local analysis engine.
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>Get In Touch</h2>
-    <p>
-      Want updates or early access? Reach out and we'll share progress as milestones ship.
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>Back to Pardix Labs</h2>
-    <p>
-      Return to the <a href="index.html">main site</a>.
-    </p>
+  <section class="audience">
+    <h2>Get Started</h2>
+    <p>Download the latest JAR from GitHub and run:</p>
+    <pre><code>java -jar feraldeps.jar /path/to/your/project</code></pre>
+    <p style="margin-top: 1rem;">FeralDeps is currently in active development. For updates or early access, reach out via email.</p>
   </section>
 </main>
 
 <footer>
-  <p>© Pardix Labs - Local-first developer tooling.</p>
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <span class="dot">•</span>
-    <a href="feraldeps.html">FeralDeps</a>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">
+        <img src="https://avatars.githubusercontent.com/u/258657403?s=200&v=4" alt="Pardix Labs" />
+        <span>Pardix Labs</span>
+      </span>
+      <p>Local-first developer tooling.</p>
+    </div>
+    <div class="footer-nav">
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="feraldeps.html">FeralDeps</a>
+        <a href="https://github.com/PardixLabs/feraldeps-core">GitHub</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:pardixlabs@gmail.com">Email</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Pardix Labs. All rights reserved.</p>
   </div>
 </footer>
-
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('pardixlabs', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Donate',
-    'floating-chat.donateButton.background-color': '#794bc4',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>
 
 </body>
 </html>
